@@ -182,8 +182,26 @@ Send custom messages when members boost the server.
 ,boost add #boosts Thank you {user.mention} for boosting! 🎉
 ```
 
+### Boost Award Role
+
+Automatically give a role to members who boost the server.
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `boost award set` | Set the role to award to boosters | `boost award set (role)` | `manage_guild` |
+| `boost award view` | View the current boost award role | `boost award view` | `manage_guild` |
+| `boost award unset` | Remove the boost award role | `boost award unset` | `manage_guild` |
+
+**Example:**
+```
+,boost award set @Booster
+,boost award view
+,boost award unset
+```
+
 {% hint style="info" %}
 You can have up to **10 messages** for each type (welcome, leave, boost).
+Only **one** award role can be set at a time.
 {% endhint %}
 
 ---
