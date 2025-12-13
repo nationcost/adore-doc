@@ -342,3 +342,72 @@ Add interactive buttons to messages that send a response when clicked.
 - Up to **25 buttons** per message
 - Use the button ID from `,buttonresponse list` to remove specific buttons
 {% endhint %}
+
+---
+
+## Filter (AutoMod)
+
+Manage server content filtering using Discord's native AutoMod system.
+
+### Word Filter
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `filter add` | Add a word to the filter | `filter add (word)` | `manage_guild` |
+| `filter remove` | Remove a word from the filter | `filter remove (word)` | `manage_guild` |
+| `filter exempt` | Exempt a role, user, or channel | `filter exempt (role/user/channel)` | `manage_guild` |
+| `filter list` | List all filtered words | `filter list` | `manage_guild` |
+
+**Example:**
+```
+,filter add badword
+,filter remove badword
+,filter exempt @Moderators
+,filter exempt #bot-commands
+```
+
+### Link Filter
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `filter links on` | Enable link filtering | `filter links on` | `manage_guild` |
+| `filter links off` | Disable link filtering | `filter links off` | `manage_guild` |
+| `filter links exempt` | Exempt a role or channel | `filter links exempt (role/channel)` | `manage_guild` |
+
+**Example:**
+```
+,filter links on
+,filter links exempt @Trusted
+,filter links off
+```
+
+### Invite Filter
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `filter invites on` | Enable invite link filtering | `filter invites on` | `manage_guild` |
+| `filter invites off` | Disable invite link filtering | `filter invites off` | `manage_guild` |
+| `filter invites exempt` | Exempt a role or channel | `filter invites exempt (role/channel)` | `manage_guild` |
+
+**Example:**
+```
+,filter invites on
+,filter invites exempt #partnerships
+,filter invites off
+```
+
+### Reset Filters
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `filter reset` | Reset all filters (removes all AutoMod rules) | `filter reset` | `manage_guild` |
+
+{% hint style="info" %}
+- Up to **1000 filtered words**
+- Up to **20 exempt roles** and **50 exempt channels** per filter
+- Uses Discord's native AutoMod for reliable filtering
+{% endhint %}
+
+{% hint style="warning" %}
+The bot requires `Manage Server` permission to create and manage AutoMod rules.
+{% endhint %}

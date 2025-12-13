@@ -19,6 +19,7 @@
 * [Moderation Setup](security-setup/quickstart.md)
 * [Welcome & Leave Messages](setup-guides/greet.md)
 * [Autoresponder & Autoreact](setup-guides/auto.md)
+* [Button Roles & Responses](setup-guides/buttons.md)
 
 ## Reference
 
