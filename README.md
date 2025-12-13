@@ -91,4 +91,4 @@ Join our [support server](https://adore.rest/server) for help, updates, and more
 
 - [Invite Bot](https://discord.com/oauth2/authorize)
 - [Support Server](https://adore.rest/server)
-- [Documentation](https://docs.adore.bot)
+- [Commands](https://adore.rest/commands)

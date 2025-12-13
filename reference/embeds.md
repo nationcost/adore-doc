@@ -250,7 +250,7 @@ Non-link buttons are decorative only and don't perform actions.
 ### With Buttons
 
 ```
-,ce {embed}$v{title: Useful Links}$v{description: Check out these resources!}$v{color: #5865F2}$v{button: https://adore.rest/server && Join Server && 🎮}$v{button: https://docs.adore.bot && Documentation && 📚}
+,ce {embed}$v{title: Useful Links}$v{description: Check out these resources!}$v{color: #5865F2}$v{button: https://adore.rest/server && Join Server && 🎮}$v{button: https://adore.rest/commands && Commands && 📚}
 ```
 
 ### Full Featured
