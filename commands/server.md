@@ -439,7 +439,7 @@ Booster roles will be created directly below the baserole. If no baserole is set
 | `boosterrole color` | Change your booster role color | `boosterrole color (color)` | Booster |
 | `boosterrole icon` | Change your booster role icon | `boosterrole icon (emoji)` | Booster |
 | `boosterrole share` | Share your role with another user | `boosterrole share (user)` | Booster |
-| `boosterrole share remove` | Remove a user from your shared role | `boosterrole share remove (user)` | Booster |
+| `boosterrole unshare` | Remove a user from your shared role | `boosterrole unshare (user)` | Booster |
 | `boosterrole name` | Rename your booster role | `boosterrole name (new name)` | Booster |
 | `boosterrole remove` | Delete your booster role | `boosterrole remove` | Booster |
 
@@ -453,7 +453,7 @@ Booster roles will be created directly below the baserole. If no baserole is set
 ,br color pink
 ,br icon 🔥
 ,br share @friend
-,br share remove @friend
+,br unshare @friend
 ,br name Cool Name
 ,br rename New Name
 ,br remove
