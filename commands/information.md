@@ -58,3 +58,75 @@ Leave the user argument empty to view your own avatar/banner.
 ,whois @user
 ,ui 123456789012345678
 ```
+
+---
+
+## Server Information
+
+| Command | Description | Aliases | Syntax |
+|---------|-------------|---------|--------|
+| `serverinfo` | View detailed information about the server | `si`, `guildinfo` | `serverinfo` |
+| `membercount` | View the server's member count | `mc` | `membercount` |
+| `roleinfo` | View information about a role | `ri` | `roleinfo (role)` |
+| `channelinfo` | View information about a channel | `ci` | `channelinfo [channel]` |
+
+### Member Count
+
+Shows the server's member statistics with:
+- Total users
+- Human members
+- Bot accounts
+- Members joined today (in footer)
+
+**Example:**
+```
+,membercount
+,mc
+```
+
+### Server Info
+
+Shows comprehensive server information including:
+- Owner and server ID
+- Creation date
+- Member counts
+- Channel counts
+- Roles, emojis, stickers
+- Boost level and count
+- Verification level
+
+**Example:**
+```
+,serverinfo
+,si
+```
+
+### Role Info
+
+Shows detailed information about a role:
+- Role ID and color
+- Position in hierarchy
+- Properties (hoisted, mentionable, managed)
+- Member count
+- Key permissions
+
+**Example:**
+```
+,roleinfo @Members
+,ri @Admin
+```
+
+### Channel Info
+
+Shows information about a channel:
+- Channel ID and type
+- Category
+- NSFW status
+- Slowmode (for text channels)
+- Bitrate and user limit (for voice channels)
+
+**Example:**
+```
+,channelinfo #general
+,ci
+```

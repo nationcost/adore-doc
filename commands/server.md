@@ -407,3 +407,68 @@ Manage server content filtering using Discord's native AutoMod system.
 {% hint style="warning" %}
 The bot requires `Manage Server` permission to create and manage AutoMod rules.
 {% endhint %}
+
+---
+
+## Booster Role
+
+Allow server boosters to create and customize their own personal role.
+
+### Setup
+
+Before boosters can use this feature, an administrator must set a baserole:
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `settings baserole` | Set the base role for booster role positioning | `settings baserole (role)` | `administrator` |
+
+**Example:**
+```
+,settings baserole @BoosterRoles
+```
+
+{% hint style="warning" %}
+Booster roles will be created directly below the baserole. If no baserole is set, the feature is disabled.
+{% endhint %}
+
+### Booster Commands
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `boosterrole create` | Create your custom booster role | `boosterrole create [name]` | Booster |
+| `boosterrole color` | Change your booster role color | `boosterrole color (color)` | Booster |
+| `boosterrole icon` | Change your booster role icon | `boosterrole icon (emoji)` | Booster |
+| `boosterrole share` | Share your role with another user | `boosterrole share (user)` | Booster |
+| `boosterrole share remove` | Remove a user from your shared role | `boosterrole share remove (user)` | Booster |
+| `boosterrole name` | Rename your booster role | `boosterrole name (new name)` | Booster |
+| `boosterrole remove` | Delete your booster role | `boosterrole remove` | Booster |
+
+**Aliases:** `br`
+
+**Examples:**
+```
+,br create
+,br create Cool Name
+,br color #ff5733
+,br color pink
+,br icon 🔥
+,br share @friend
+,br share remove @friend
+,br name Cool Name
+,br rename New Name
+,br remove
+```
+
+### Admin Commands
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `boosterrole list` | List all booster roles in the server | `boosterrole list` | `manage_roles` |
+| `boosterrole cleanup` | Remove roles from users who stopped boosting | `boosterrole cleanup` | `manage_roles` |
+
+{% hint style="info" %}
+- Role name defaults to the user's display name if not specified
+- Role icons require the server to have boost level 2
+- Shared users receive a confirmation prompt before getting the role
+- You can share your role with any number of users
+{% endhint %}
