@@ -47,8 +47,6 @@ Button roles let users self-assign roles by clicking a button.
 | `buttonrole list` | List all button roles | `buttonrole list` |
 | `buttonrole reset` | Remove all button roles | `buttonrole reset` |
 
-**Aliases:** `br`
-
 ### Setup Steps
 
 **Step 1:** Create a message using the bot
@@ -85,9 +83,9 @@ Button roles let users self-assign roles by clicking a button.
 
 Then add the buttons:
 ```
-,br add [message link] primary 🎮 Gamer @Gamer
-,br add [message link] success 🎵 Music @Music  
-,br add [message link] secondary 📢 Announcements @Announcements
+,buttonrole add [message link] primary 🎮 Gamer @Gamer
+,buttonrole add [message link] success 🎵 Music @Music  
+,buttonrole add [message link] secondary 📢 Announcements @Announcements
 ```
 
 ---
@@ -105,8 +103,6 @@ Button responses send a message (visible only to the clicker) when clicked.
 | `buttonresponse removeall` | Remove all buttons from a message | `buttonresponse removeall (message link)` |
 | `buttonresponse list` | List all button responses | `buttonresponse list` |
 | `buttonresponse reset` | Remove all button responses | `buttonresponse reset` |
-
-**Aliases:** `bresp`
 
 ### Setup Steps
 
@@ -132,7 +128,7 @@ Button responses send a message (visible only to the clicker) when clicked.
 You can use embed syntax in your responses:
 
 ```
-,bresp add [link] success ❓ FAQ, {embed}$v{title: FAQ}$v{description: **Q: How do I get roles?**
+,buttonresponse add [link] success ❓ FAQ, {embed}$v{title: FAQ}$v{description: **Q: How do I get roles?**
 A: Use the role selection menu!}$v{color: #00ff00}
 ```
 
@@ -144,9 +140,9 @@ A: Use the role selection menu!}$v{color: #00ff00}
 
 Then add responses:
 ```
-,bresp add [link] primary 📜 Rules, **Our Rules:**\n1. Be kind\n2. No spam\n3. Have fun!
-,bresp add [link] success ❓ FAQ, **FAQ:**\nQ: How to get roles?\nA: Check #roles!
-,bresp add [link] danger 🎫 Support, Need help? Create a ticket in #support!
+,buttonresponse add [link] primary 📜 Rules, **Our Rules:**\n1. Be kind\n2. No spam\n3. Have fun!
+,buttonresponse add [link] success ❓ FAQ, **FAQ:**\nQ: How to get roles?\nA: Check #roles!
+,buttonresponse add [link] danger 🎫 Support, Need help? Create a ticket in #support!
 ```
 
 ---
@@ -215,7 +211,7 @@ Button responses support all standard variables:
 
 **Example:**
 ```
-,bresp add [link] primary 👋 Welcome, Welcome {user.mention}! You're member #{guild.members}!
+,buttonresponse add [link] primary 👋 Welcome, Welcome {user.mention}! You're member #{guild.members}!
 ```
 
 See the [Variables Reference](../reference/variables.md) for the full list.

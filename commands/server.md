@@ -301,8 +301,6 @@ Add interactive buttons to messages that give/remove roles when clicked.
 | `buttonrole list` | List all button roles | `buttonrole list` | `manage_roles` |
 | `buttonrole reset` | Remove all button roles | `buttonrole reset` | `manage_roles` |
 
-**Aliases:** `br`
-
 **Styles:** `primary` (blurple), `secondary` (grey), `success` (green), `danger` (red)
 
 **Example:**
@@ -329,8 +327,6 @@ Add interactive buttons to messages that send a response when clicked.
 | `buttonresponse removeall` | Remove all button responses from a message | `buttonresponse removeall (message link)` | `manage_guild` |
 | `buttonresponse list` | List all button responses | `buttonresponse list` | `manage_guild` |
 | `buttonresponse reset` | Remove all button responses | `buttonresponse reset` | `manage_guild` |
-
-**Aliases:** `bresp`
 
 **Example:**
 ```
