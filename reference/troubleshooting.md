@@ -331,4 +331,4 @@ If you need literal `{` or `}` in your text, there's currently no escape method.
 
 1. Double-check your syntax against the reference pages
 2. Test with a minimal example first
-3. Join our [support server](https://discord.gg/adore) for help
+3. Join our [support server](https://adore.rest/server) for help

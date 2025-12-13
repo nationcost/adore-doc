@@ -13,7 +13,7 @@ Premium is a server-wide upgrade that unlocks additional features and higher lim
 
 Premium can be purchased for your server to support the bot's development and hosting costs.
 
-Contact us through a [ticket on our server](https://discord.gg/adore) to purchase premium for your server.
+Contact us through a [ticket on our server](https://adore.rest/server) to purchase premium for your server.
 
 ---
 

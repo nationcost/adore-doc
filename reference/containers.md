@@ -192,13 +192,13 @@ Add interactive buttons at the bottom.
 ### With Buttons
 
 ```
-,ce {container}$v{text: # Quick Links}$v{text: Check out these useful resources!}$v{separator}$v{button: https://discord.gg/adore && Join Server && 🎮}$v{button: https://docs.adore.bot && Docs && 📚}$v{color: #5865F2}
+,ce {container}$v{text: # Quick Links}$v{text: Check out these useful resources!}$v{separator}$v{button: https://adore.rest/server && Join Server && 🎮}$v{button: https://docs.adore.bot && Docs && 📚}$v{color: #5865F2}
 ```
 
 ### Full Featured
 
 ```
-,ce {container}$v{section: # Welcome {user.name}!\n\nYou are member **#{guild.count}** && {user.avatar}}$v{separator}$v{text: ## Getting Started\n- Read the rules in #rules\n- Get roles in #roles\n- Introduce yourself in #introductions}$v{separator:large}$v{text: -# Need help? Open a ticket!}$v{button: https://discord.gg/adore && Support && 🎫}$v{color: #00ff00}
+,ce {container}$v{section: # Welcome {user.name}!\n\nYou are member **#{guild.count}** && {user.avatar}}$v{separator}$v{text: ## Getting Started\n- Read the rules in #rules\n- Get roles in #roles\n- Introduce yourself in #introductions}$v{separator:large}$v{text: -# Need help? Open a ticket!}$v{button: https://adore.rest/server && Support && 🎫}$v{color: #00ff00}
 ```
 
 ---

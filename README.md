@@ -83,12 +83,12 @@ Use the help command to get information about any command:
 
 ### Support Server
 
-Join our [support server](https://discord.gg/adore) for help, updates, and more.
+Join our [support server](https://adore.rest/server) for help, updates, and more.
 
 ---
 
 ## Links
 
 - [Invite Bot](https://discord.com/oauth2/authorize)
-- [Support Server](https://discord.gg/adore)
+- [Support Server](https://adore.rest/server)
 - [Documentation](https://docs.adore.bot)

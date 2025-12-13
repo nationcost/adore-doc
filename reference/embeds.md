@@ -250,13 +250,13 @@ Non-link buttons are decorative only and don't perform actions.
 ### With Buttons
 
 ```
-,ce {embed}$v{title: Useful Links}$v{description: Check out these resources!}$v{color: #5865F2}$v{button: https://discord.gg/adore && Join Server && 🎮}$v{button: https://docs.adore.bot && Documentation && 📚}
+,ce {embed}$v{title: Useful Links}$v{description: Check out these resources!}$v{color: #5865F2}$v{button: https://adore.rest/server && Join Server && 🎮}$v{button: https://docs.adore.bot && Documentation && 📚}
 ```
 
 ### Full Featured
 
 ```
-,ce {content: @everyone New update!}$v{embed}$v{author: Adore Bot && {guild.icon} && https://adore.bot}$v{title: Version 2.0 Released!}$v{description: We've added tons of new features:\n\n• New moderation commands\n• Improved embed builder\n• Bug fixes}$v{field: Downloads && 10,000+ && true}$v{field: Rating && ⭐⭐⭐⭐⭐ && true}$v{color: #5865F2}$v{image: https://example.com/banner.png}$v{footer: Thanks for using Adore! && {guild.icon}}$v{timestamp}$v{button: https://discord.gg/adore && Support Server}
+,ce {content: @everyone New update!}$v{embed}$v{author: Adore Bot && {guild.icon} && https://adore.bot}$v{title: Version 2.0 Released!}$v{description: We've added tons of new features:\n\n• New moderation commands\n• Improved embed builder\n• Bug fixes}$v{field: Downloads && 10,000+ && true}$v{field: Rating && ⭐⭐⭐⭐⭐ && true}$v{color: #5865F2}$v{image: https://example.com/banner.png}$v{footer: Thanks for using Adore! && {guild.icon}}$v{timestamp}$v{button: https://adore.rest/server && Support Server}
 ```
 
 ---

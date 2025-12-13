@@ -9,7 +9,7 @@ icon: sack-dollar
 
 Donator perks can be purchased via a small donation to keep the bot running free to everyone.
 
-You can create a [ticket on our server](https://discord.gg/adore) if you like the project and want to donate.
+You can create a [ticket on our server](https://adore.rest/server) if you like the project and want to donate.
 
 ---
 
