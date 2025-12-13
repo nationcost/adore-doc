@@ -286,3 +286,59 @@ Automatically react to all messages in specific channels.
 {% hint style="info" %}
 Up to **3 reactions** per channel. Slowmode is automatically set to 3 seconds.
 {% endhint %}
+
+---
+
+## Button Roles
+
+Add interactive buttons to messages that give/remove roles when clicked.
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `buttonrole add` | Add a button role to a message | `buttonrole add (message link) (style) (emote) (name) (role)` | `manage_roles` |
+| `buttonrole remove` | Remove a button role | `buttonrole remove (message link) (role)` | `manage_roles` |
+| `buttonrole removeall` | Remove all button roles from a message | `buttonrole removeall (message link)` | `manage_roles` |
+| `buttonrole list` | List all button roles | `buttonrole list` | `manage_roles` |
+| `buttonrole reset` | Remove all button roles | `buttonrole reset` | `manage_roles` |
+
+**Aliases:** `br`
+
+**Styles:** `primary` (blurple), `secondary` (grey), `success` (green), `danger` (red)
+
+**Example:**
+```
+,buttonrole add https://discord.com/channels/123/456/789 primary 🎮 Gamer @Gamer
+,buttonrole add https://discord.com/channels/123/456/789 success 🎵 Music @Music
+```
+
+{% hint style="info" %}
+- Up to **25 buttons** per message
+- Buttons can only be added to messages sent by the bot
+{% endhint %}
+
+---
+
+## Button Responses
+
+Add interactive buttons to messages that send a response when clicked.
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `buttonresponse add` | Add a button response | `buttonresponse add (message link) (style) (emote) (name), (response)` | `manage_guild` |
+| `buttonresponse remove` | Remove a button response | `buttonresponse remove (message link) (button id)` | `manage_guild` |
+| `buttonresponse removeall` | Remove all button responses from a message | `buttonresponse removeall (message link)` | `manage_guild` |
+| `buttonresponse list` | List all button responses | `buttonresponse list` | `manage_guild` |
+| `buttonresponse reset` | Remove all button responses | `buttonresponse reset` | `manage_guild` |
+
+**Aliases:** `bresp`
+
+**Example:**
+```
+,buttonresponse add https://discord.com/channels/123/456/789 primary 📜 Rules, Here are the server rules...
+,buttonresponse add https://discord.com/channels/123/456/789 success ❓ FAQ, Check out our FAQ at...
+```
+
+{% hint style="info" %}
+- Up to **25 buttons** per message
+- Use the button ID from `,buttonresponse list` to remove specific buttons
+{% endhint %}
