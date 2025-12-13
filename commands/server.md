@@ -316,27 +316,27 @@ Add interactive buttons to messages that give/remove roles when clicked.
 
 ---
 
-## Button Responses
+## Button Responder
 
 Add interactive buttons to messages that send a response when clicked.
 
 | Command | Description | Syntax | Permission |
 |---------|-------------|--------|------------|
-| `buttonresponse add` | Add a button response | `buttonresponse add (message link) (style) (emote) (name), (response)` | `manage_guild` |
-| `buttonresponse remove` | Remove a button response | `buttonresponse remove (message link) (button id)` | `manage_guild` |
-| `buttonresponse removeall` | Remove all button responses from a message | `buttonresponse removeall (message link)` | `manage_guild` |
-| `buttonresponse list` | List all button responses | `buttonresponse list` | `manage_guild` |
-| `buttonresponse reset` | Remove all button responses | `buttonresponse reset` | `manage_guild` |
+| `buttonresponder add` | Add a button response | `buttonresponder add (message link) (style) (emote) (name), (response)` | `manage_guild` |
+| `buttonresponder remove` | Remove a button response | `buttonresponder remove (message link) (button id)` | `manage_guild` |
+| `buttonresponder removeall` | Remove all button responses from a message | `buttonresponder removeall (message link)` | `manage_guild` |
+| `buttonresponder list` | List all button responses | `buttonresponder list` | `manage_guild` |
+| `buttonresponder reset` | Remove all button responses | `buttonresponder reset` | `manage_guild` |
 
 **Example:**
 ```
-,buttonresponse add https://discord.com/channels/123/456/789 primary 📜 Rules, Here are the server rules...
-,buttonresponse add https://discord.com/channels/123/456/789 success ❓ FAQ, Check out our FAQ at...
+,buttonresponder add https://discord.com/channels/123/456/789 primary 📜 Rules, Here are the server rules...
+,buttonresponder add https://discord.com/channels/123/456/789 success ❓ FAQ, Check out our FAQ at...
 ```
 
 {% hint style="info" %}
 - Up to **25 buttons** per message
-- Use the button ID from `,buttonresponse list` to remove specific buttons
+- Use the button ID from `,buttonresponder list` to remove specific buttons
 {% endhint %}
 
 ---

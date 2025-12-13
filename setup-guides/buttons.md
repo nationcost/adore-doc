@@ -90,19 +90,19 @@ Then add the buttons:
 
 ---
 
-## Button Responses
+## Button Responder
 
-Button responses send a message (visible only to the clicker) when clicked.
+Button responder sends a message (visible only to the clicker) when clicked.
 
 ### Commands
 
 | Command | Description | Syntax |
 |---------|-------------|--------|
-| `buttonresponse add` | Add a button response | `buttonresponse add (message link) (style) (emote) (name), (response)` |
-| `buttonresponse remove` | Remove a button response | `buttonresponse remove (message link) (button id)` |
-| `buttonresponse removeall` | Remove all buttons from a message | `buttonresponse removeall (message link)` |
-| `buttonresponse list` | List all button responses | `buttonresponse list` |
-| `buttonresponse reset` | Remove all button responses | `buttonresponse reset` |
+| `buttonresponder add` | Add a button response | `buttonresponder add (message link) (style) (emote) (name), (response)` |
+| `buttonresponder remove` | Remove a button response | `buttonresponder remove (message link) (button id)` |
+| `buttonresponder removeall` | Remove all buttons from a message | `buttonresponder removeall (message link)` |
+| `buttonresponder list` | List all button responses | `buttonresponder list` |
+| `buttonresponder reset` | Remove all button responses | `buttonresponder reset` |
 
 ### Setup Steps
 
@@ -117,7 +117,7 @@ Button responses send a message (visible only to the clicker) when clicked.
 **Step 3:** Add button responses
 
 ```
-,buttonresponse add https://discord.com/channels/123/456/789 primary 📜 Rules, **Server Rules:**
+,buttonresponder add https://discord.com/channels/123/456/789 primary 📜 Rules, **Server Rules:**
 1. Be respectful
 2. No spam
 3. Follow Discord TOS
@@ -128,7 +128,7 @@ Button responses send a message (visible only to the clicker) when clicked.
 You can use embed syntax in your responses:
 
 ```
-,buttonresponse add [link] success ❓ FAQ, {embed}$v{title: FAQ}$v{description: **Q: How do I get roles?**
+,buttonresponder add [link] success ❓ FAQ, {embed}$v{title: FAQ}$v{description: **Q: How do I get roles?**
 A: Use the role selection menu!}$v{color: #00ff00}
 ```
 
@@ -140,9 +140,9 @@ A: Use the role selection menu!}$v{color: #00ff00}
 
 Then add responses:
 ```
-,buttonresponse add [link] primary 📜 Rules, **Our Rules:**\n1. Be kind\n2. No spam\n3. Have fun!
-,buttonresponse add [link] success ❓ FAQ, **FAQ:**\nQ: How to get roles?\nA: Check #roles!
-,buttonresponse add [link] danger 🎫 Support, Need help? Create a ticket in #support!
+,buttonresponder add [link] primary 📜 Rules, **Our Rules:**\n1. Be kind\n2. No spam\n3. Have fun!
+,buttonresponder add [link] success ❓ FAQ, **FAQ:**\nQ: How to get roles?\nA: Check #roles!
+,buttonresponder add [link] danger 🎫 Support, Need help? Create a ticket in #support!
 ```
 
 ---
@@ -168,7 +168,7 @@ Then add responses:
 {% endhint %}
 
 {% hint style="info" %}
-**To remove a button response**, use the button ID shown in `,buttonresponse list`.
+**To remove a button response**, use the button ID shown in `,buttonresponder list`.
 {% endhint %}
 
 ---
@@ -187,7 +187,7 @@ Then add responses:
 ### Buttons not appearing
 - Check if you have the required permissions
 - Verify the message link is correct
-- Try using `,buttonrole list` or `,buttonresponse list` to see if it was added
+- Try using `,buttonrole list` or `,buttonresponder list` to see if it was added
 
 ### Role not being given
 - Ensure the bot's role is higher than the role being assigned
@@ -211,7 +211,7 @@ Button responses support all standard variables:
 
 **Example:**
 ```
-,buttonresponse add [link] primary 👋 Welcome, Welcome {user.mention}! You're member #{guild.members}!
+,buttonresponder add [link] primary 👋 Welcome, Welcome {user.mention}! You're member #{guild.members}!
 ```
 
 See the [Variables Reference](../reference/variables.md) for the full list.
