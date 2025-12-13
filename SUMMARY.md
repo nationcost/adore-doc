@@ -4,6 +4,7 @@
 
 * [Introduction](README.md)
 * [Donator Perks](donator-perks.md)
+* [Premium Perks](premium-perks.md)
 
 ## Commands
 
