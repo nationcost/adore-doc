@@ -29,7 +29,7 @@ Create command shortcuts for your server.
 Now `,k @user` will kick and `,b` will ban the preset user.
 
 {% hint style="info" %}
-You can have up to **25 server aliases**.
+You can have up to **50 server aliases**.
 {% endhint %}
 
 ---

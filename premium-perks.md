@@ -27,9 +27,9 @@ Contact us through a [ticket on our server](https://adore.rest/server) to purcha
 | Welcome Messages | 10 | 25 |
 | Leave Messages | 10 | 25 |
 | Boost Messages | 10 | 25 |
-| Autoresponders | 50 | 150 |
-| Autoreact Triggers | 50 | 150 |
-| Server Aliases | 25 | 100 |
+| Autoresponders | 50 | 100 |
+| Autoreact Triggers | 50 | 100 |
+| Server Aliases | 50 | 100 |
 
 ### Exclusive Features
 

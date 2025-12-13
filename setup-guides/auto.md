@@ -83,7 +83,7 @@ Create embed responses:
 ```
 
 {% hint style="info" %}
-You can have up to **50 autoresponders** per server.
+You can have up to **100 autoresponders** per server.
 {% endhint %}
 
 ---
@@ -123,7 +123,7 @@ Now messages containing "hello" will get 👍, 👋, and ❤️ reactions.
 
 {% hint style="info" %}
 - Up to **5 reactions** per trigger
-- Up to **50 triggers** per server
+- Up to **100 triggers** per server
 {% endhint %}
 
 ---

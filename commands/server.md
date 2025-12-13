@@ -208,7 +208,7 @@ Automatically react to messages containing specific trigger words.
 
 {% hint style="info" %}
 - Up to **5 reactions** per trigger
-- Up to **50 triggers** total
+- Up to **100 triggers** total
 {% endhint %}
 
 ---
@@ -244,7 +244,7 @@ Automatically respond to messages containing specific triggers.
 ```
 
 {% hint style="info" %}
-You can have up to **50 autoresponders**.
+You can have up to **100 autoresponders**.
 {% endhint %}
 
 ---
