@@ -99,3 +99,31 @@ Set personal reminders.
 - Maximum duration: **100 years**
 - Maximum reminders: **25**
 {% endhint %}
+
+---
+
+## Transcribe
+
+Transcribe audio or video files to text.
+
+| Command | Description | Aliases | Syntax | Permission |
+|---------|-------------|---------|--------|------------|
+| `transcribe` | Transcribe audio/video to text | `transcript`, `ts` | `transcribe [url/attachment/reply]` | None |
+
+**Usage:**
+- Attach an audio/video file and run `,transcribe`
+- Provide a URL: `,transcribe https://example.com/audio.mp3`
+- Reply to a voice message and run `,transcribe`
+
+**Supported Formats:** MP3, WAV, OGG, M4A, FLAC, AAC, OPUS, WEBM, MP4, MOV, AVI, MKV
+
+**Examples:**
+```
+,transcribe https://example.com/audio.mp3
+,ts (with audio attachment)
+,transcript (reply to a voice message)
+```
+
+{% hint style="info" %}
+The transcription is sent as plain text without any embed formatting.
+{% endhint %}
