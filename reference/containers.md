@@ -207,20 +207,20 @@ Add interactive buttons at the bottom.
 
 | Feature | Embed | Container |
 |---------|-------|-----------|
-| Colored bar | ✅ | ✅ |
-| Title | ✅ | Use `{text: # Title}` |
-| Description | ✅ | Use `{text: ...}` |
-| Fields | ✅ | Use multiple `{text: ...}` |
-| Thumbnail | ✅ | Use `{section: ... && url}` |
-| Image | ✅ | ✅ |
-| Gallery | ❌ | ✅ |
-| Footer | ✅ | Use `{text: -# footer}` |
-| Author | ✅ | Use `{text: ...}` |
-| Timestamp | ✅ | Use timestamp variables |
-| Buttons | ✅ | ✅ |
-| Separators | ❌ | ✅ |
-| Sections | ❌ | ✅ |
-| Headings | ❌ | ✅ (markdown) |
+| Colored bar | Yes | Yes |
+| Title | Yes | Yes (use `# Title`) |
+| Description | Yes | Yes (use `{text}`) |
+| Fields | Yes | Yes (use multiple `{text}`) |
+| Thumbnail | Yes | Yes (use `{section}`) |
+| Image | Yes | Yes |
+| Gallery | No | Yes |
+| Footer | Yes | Yes (use `-# text`) |
+| Author | Yes | Yes (use `{text}`) |
+| Timestamp | Yes | Yes (use variables) |
+| Buttons | Yes | Yes |
+| Separators | No | Yes |
+| Sections | No | Yes |
+| Headings | No | Yes (markdown) |
 
 ---
 
