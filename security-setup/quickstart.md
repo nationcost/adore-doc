@@ -87,17 +87,17 @@ If you prefer to set things up manually:
 2. For each channel, set the appropriate permission overwrites:
 
 **For `muted`:**
-- Send Messages: ❌
-- Add Reactions: ❌
-- Speak: ❌
+- Send Messages: No
+- Add Reactions: No
+- Speak: No
 
 **For `imuted`:**
-- Attach Files: ❌
-- Embed Links: ❌
+- Attach Files: No
+- Embed Links: No
 
 **For `rmuted`:**
-- Add Reactions: ❌
-- Use External Emojis: ❌
+- Add Reactions: No
+- Use External Emojis: No
 - Use External Stickers: ❌
 
 ---

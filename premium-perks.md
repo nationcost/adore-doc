@@ -55,11 +55,11 @@ Server administrators can check if their server has premium:
 | Feature | Donator | Premium |
 |---------|---------|---------|
 | Scope | Personal (user) | Server-wide |
-| Self Prefix | ✅ | ❌ |
-| Self Aliases | ✅ (50) | ❌ |
-| Increased Server Limits | ❌ | ✅ |
-| Priority Support | ❌ | ✅ |
-| Custom Branding | ❌ | ✅ |
+| Self Prefix | Yes | No |
+| Self Aliases | Yes (50) | No |
+| Increased Server Limits | No | Yes |
+| Priority Support | No | Yes |
+| Custom Branding | No | Yes |
 
 {% hint style="info" %}
 **Donator** perks follow you across all servers.
