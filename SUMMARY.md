@@ -12,6 +12,7 @@
 * [Moderation](commands/moderation.md)
 * [Server Management](commands/server.md)
 * [Utility](commands/utility.md)
+* [Social](commands/social.md)
 * [Customization](commands/customization.md)
 
 ## Setup Guides
