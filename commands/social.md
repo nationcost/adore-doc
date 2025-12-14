@@ -9,6 +9,28 @@ Look up profiles from various social media platforms.
 
 ---
 
+## Video Repost
+
+Download videos from Instagram, TikTok, and YouTube by typing `adore` followed by a link.
+
+| Trigger | Description | Platforms |
+|---------|-------------|-----------|
+| `adore (link)` | Download and repost a video | Instagram, TikTok, YouTube |
+
+**Examples:**
+```
+adore https://www.instagram.com/reel/ABC123
+adore https://www.tiktok.com/@user/video/123456
+adore https://youtube.com/shorts/ABC123
+adore https://youtu.be/dQw4w9WgXcQ
+```
+
+{% hint style="info" %}
+Videos must be under 25MB to be uploaded. No prefix required - just type `adore` followed by the link.
+{% endhint %}
+
+---
+
 ## Instagram
 
 | Command | Description | Aliases | Syntax | Permission |
