@@ -127,3 +127,74 @@ Transcribe audio or video files to text.
 {% hint style="info" %}
 The transcription is sent as plain text without any embed formatting.
 {% endhint %}
+
+---
+
+## Steal
+
+Quickly steal emojis and stickers from messages.
+
+| Command | Description | Aliases | Syntax | Permission |
+|---------|-------------|---------|--------|------------|
+| `steal` | Steal emojis or stickers | `yoink` | `steal [emojis...]` or reply to message | `manage_emojis` |
+
+**Usage:**
+- Reply to a message containing emojis/stickers and run `,steal`
+- Provide emojis directly: `,steal :emoji1: :emoji2:`
+
+**Examples:**
+```
+,steal :pepe: :sadge:
+,yoink (reply to a message)
+```
+
+{% hint style="info" %}
+This command steals both **emojis** and **stickers** from replied messages.
+{% endhint %}
+
+---
+
+## Emoji Management
+
+Manage your server's custom emojis.
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `emoji add` | Add emojis to the server | `emoji add (emojis...)` | `manage_emojis` |
+| `emoji remove` | Remove emojis from the server | `emoji remove (emojis...)` | `manage_emojis` |
+| `emoji list` | List all server emojis | `emoji list` | None |
+
+**Examples:**
+```
+,emoji add :pepe: :sadge: :kekw:
+,emoji remove :pepe:
+,emoji list
+```
+
+{% hint style="info" %}
+The emoji list displays with numbered entries, emoji preview, and clickable links to the emoji URL.
+{% endhint %}
+
+---
+
+## Sticker Management
+
+Manage your server's custom stickers.
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `sticker add` | Add a sticker from a message link | `sticker add (message link)` | `manage_emojis` |
+| `sticker remove` | Remove a sticker by link or name | `sticker remove (message link or name)` | `manage_emojis` |
+| `sticker list` | List all server stickers | `sticker list` | None |
+
+**Examples:**
+```
+,sticker add https://discord.com/channels/123/456/789
+,sticker remove https://discord.com/channels/123/456/789
+,sticker remove MyStickerName
+,sticker list
+```
+
+{% hint style="info" %}
+Provide a **message link** containing the sticker you want to add or remove.
+{% endhint %}
