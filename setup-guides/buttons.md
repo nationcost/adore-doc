@@ -215,3 +215,59 @@ Button responses support all standard variables:
 ```
 
 See the [Variables Reference](../reference/variables.md) for the full list.
+
+---
+
+## Using Buttons with Autoresponder
+
+You can trigger buttons through the autoresponder using `{button:ID}`.
+
+### Setup
+
+**Step 1:** Create a button response first
+```
+,buttonresponder add [message link] primary 🛒 Shop, Welcome to the shop! Here are our items...
+```
+
+**Step 2:** Note the button's position in the list
+```
+,buttonresponder list
+```
+The number shown (e.g., `01`) is the button ID.
+
+**Step 3:** Create an autoresponder that sends the button
+```
+,ar add shop, {button:1}
+```
+
+### Behavior
+
+When someone types the trigger word:
+- Their message is **deleted** (keeps the channel clean)
+- The button appears in the channel
+- Clicking the button shows the response (ephemeral)
+
+### Keep the Trigger Message
+
+If you don't want the trigger message deleted, use `--keep`:
+```
+,ar add shop, {button:1} --keep
+```
+
+### Example Use Cases
+
+**Quick access buttons:**
+```
+,ar add rules, {button:1}
+,ar add faq, {button:2}
+,ar add help, {button:3}
+```
+
+**With --keep for context:**
+```
+,ar add !shop, {button:1} --keep
+```
+
+{% hint style="info" %}
+The button ID corresponds to the order in `,buttonresponder list`. If you remove a button, the IDs may shift.
+{% endhint %}

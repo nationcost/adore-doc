@@ -255,14 +255,33 @@ Automatically respond to messages containing specific triggers.
 - `--reply` - Reply to the message
 - `--not_strict` - Match anywhere in message (not exact)
 - `--delete N` - Delete response after N seconds (1-10)
+- `--keep` - Keep the trigger message (only for button responses)
 
 **Example with flags:**
 ```
 ,ar add hello, Hello there! --reply --delete 5
 ```
 
+### Button Integration
+
+You can use `{button:ID}` to send a button from your buttonresponder list:
+
+```
+,ar add shop, {button:1}
+```
+
+When someone types "shop", the bot will:
+1. Delete their message (to keep the channel clean)
+2. Send the button from buttonresponder #1
+
+Use `--keep` to prevent deleting the trigger message:
+```
+,ar add shop, {button:1} --keep
+```
+
 {% hint style="info" %}
-You can have up to **100 autoresponders**.
+- You can have up to **100 autoresponders**
+- The button ID matches the order shown in `,buttonresponder list`
 {% endhint %}
 
 ---
