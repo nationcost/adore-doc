@@ -251,3 +251,32 @@ Manage your personal notes.
 - Maximum **50 notes** per user
 - Maximum **500 characters** per note
 {% endhint %}
+
+---
+
+## Download
+
+Download videos from social media platforms.
+
+| Command | Description | Aliases | Syntax | Permission |
+|---------|-------------|---------|--------|------------|
+| `download` | Download videos from Instagram, TikTok, or YouTube | `dl` | `download (url)` | None |
+
+**Supported Platforms:**
+- Instagram (posts, reels, TV)
+- TikTok
+- YouTube (videos, shorts)
+
+**Examples:**
+```
+,download https://www.instagram.com/reel/...
+,dl https://www.tiktok.com/@user/video/...
+,download https://youtu.be/...
+```
+
+**Alternative:** You can also use `adore {link}` in chat to auto-download.
+
+{% hint style="info" %}
+- Maximum file size: **25MB**
+- YouTube max duration: **10 minutes**
+{% endhint %}

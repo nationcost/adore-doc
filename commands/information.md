@@ -44,7 +44,7 @@ Leave the user argument empty to view your own avatar/banner.
 | Command | Description | Aliases | Syntax |
 |---------|-------------|---------|--------|
 | `whois` | View detailed information about a user | `ui`, `userinfo` | `whois [user]` |
-| `ask` | Ask Adore a question about the bot (Premium) | - | `ask (question)` |
+| `ask` | Ask Adore a question about the bot (Donator) | - | `ask (question)` |
 
 **What it shows:**
 - Display name and username
