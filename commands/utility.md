@@ -254,13 +254,13 @@ Manage your personal notes.
 
 ---
 
-## Download
+## Repost
 
 Download videos from social media platforms.
 
 | Command | Description | Aliases | Syntax | Permission |
 |---------|-------------|---------|--------|------------|
-| `download` | Download videos from Instagram, TikTok, or YouTube | `dl` | `download (url)` | None |
+| `repost` | Download videos from Instagram, TikTok, or YouTube | `rp` | `repost (url)` | None |
 
 **Supported Platforms:**
 - Instagram (posts, reels, TV)
@@ -269,9 +269,9 @@ Download videos from social media platforms.
 
 **Examples:**
 ```
-,download https://www.instagram.com/reel/...
-,dl https://www.tiktok.com/@user/video/...
-,download https://youtu.be/...
+,repost https://www.instagram.com/reel/...
+,rp https://www.tiktok.com/@user/video/...
+,repost https://youtu.be/...
 ```
 
 **Alternative:** You can also use `adore {link}` in chat to auto-download.
