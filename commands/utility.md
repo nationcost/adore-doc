@@ -280,3 +280,27 @@ Download videos from social media platforms.
 - Maximum file size: **25MB**
 - YouTube max duration: **10 minutes**
 {% endhint %}
+
+---
+
+## AFK
+
+Set your AFK status across all servers.
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `afk` | Set your AFK status | `afk [reason]` | None |
+
+**Examples:**
+```
+,afk
+,afk sleeping
+,afk be back in 30 mins
+```
+
+{% hint style="info" %}
+- When someone mentions you while AFK, they'll see your AFK reason and when you went AFK
+- Your AFK status is automatically removed when you send a message
+- AFK status is **global** (works across all servers)
+- Maximum reason length: **200 characters**
+{% endhint %}

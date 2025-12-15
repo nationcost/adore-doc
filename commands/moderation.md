@@ -16,6 +16,9 @@ Before using moderation commands, run `,setup` and `,setupmute` to configure the
 | `ban` | Ban a user from the server | `deport` | `ban (user) [reason]` | `ban_members` |
 | `unban` | Unban a user from the server | - | `unban (user) [reason]` | `ban_members` |
 | `softban` | Ban and immediately unban (clears messages) | - | `softban (user) [delete_days] [reason]` | `ban_members` |
+| `hardban` | Permanently ban a user | - | `hardban (user) [reason]` | `server_owner` |
+| `hardbans` | View all hardbanned users | - | `hardbans` | `ban_members` |
+| `unbanall` | Unban all users (excludes hardbanned) | - | `unbanall` | `server_owner` |
 
 **Examples:**
 ```
@@ -23,10 +26,17 @@ Before using moderation commands, run `,setup` and `,setupmute` to configure the
 ,ban 123456789012345678 spam
 ,softban @user 7d flooding chat
 ,unban 123456789012345678
+,hardban @user permanent troublemaker
+,hardbans
+,unbanall
 ```
 
 {% hint style="info" %}
 **Hackban:** You can ban users who aren't in the server by using their user ID.
+{% endhint %}
+
+{% hint style="warning" %}
+**Hardban:** Only the server owner or fake owner can unban hardbanned users. If someone manually unbans a hardbanned user, they will be automatically banned again when they try to rejoin.
 {% endhint %}
 
 ---
