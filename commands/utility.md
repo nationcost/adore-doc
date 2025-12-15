@@ -291,7 +291,6 @@ Set your AFK status across all servers.
 |---------|-------------|--------|------------|
 | `afk` | Set your AFK status | `afk [reason]` | None |
 | `afk mentions` | View who mentioned you while AFK | `afk mentions` | None |
-| `afk clear` | Clear your AFK mentions | `afk clear` | None |
 
 **Examples:**
 ```
@@ -299,7 +298,6 @@ Set your AFK status across all servers.
 ,afk sleeping
 ,afk be back in 30 mins
 ,afk mentions
-,afk clear
 ```
 
 {% hint style="info" %}
