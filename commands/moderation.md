@@ -189,3 +189,34 @@ Run `,setup` first to create the jail role and channel.
 {% hint style="success" %}
 Run these commands once when you first add the bot to your server.
 {% endhint %}
+
+---
+
+## Nuke
+
+Clone and delete channels, with optional scheduling.
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `nuke` | Clone and delete a channel | `nuke [channel]` | `manage_channels` |
+| `nuke add` | Schedule a nuke for a channel | `nuke add (interval) [channel] [message]` | `manage_channels` |
+| `nuke remove` | Remove a scheduled nuke | `nuke remove [channel]` | `manage_channels` |
+| `nuke list` | View all scheduled nukes | `nuke list` | `manage_channels` |
+| `nuke view` | View scheduled nuke details | `nuke view [channel]` | `manage_channels` |
+
+**Interval Format:** `1h`, `30m`, `1d`, `12h30m`
+
+**Examples:**
+```
+,nuke #spam
+,nuke add 24h #daily-reset Channel has been reset!
+,nuke list
+,nuke remove #daily-reset
+```
+
+{% hint style="info" %}
+- Minimum interval: **1 hour**
+- Maximum interval: **30 days**
+- Maximum scheduled nukes: **10 per server**
+- Channel settings (welcomes, leaves, boosts, logs) are automatically migrated to the new channel
+{% endhint %}

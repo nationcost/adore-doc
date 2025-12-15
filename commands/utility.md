@@ -198,3 +198,56 @@ Manage your server's custom stickers.
 {% hint style="info" %}
 Provide a **message link** containing the sticker you want to add or remove.
 {% endhint %}
+
+---
+
+## Name History
+
+Track username and nickname changes.
+
+| Command | Description | Aliases | Syntax | Permission |
+|---------|-------------|---------|--------|------------|
+| `namehistory` | View name history for a user | `nh`, `names` | `namehistory [user]` | None |
+| `clearhistory` | Clear your name history | `clearnames` | `clearhistory` | None |
+
+**Display Format:**
+- `1N` = Nickname change
+- `2U` = Username change
+
+**Examples:**
+```
+,namehistory @user
+,nh
+,clearhistory
+```
+
+{% hint style="info" %}
+Name history is automatically tracked when users change their username or nickname. The bot also sends notifications to a designated channel when usernames become available.
+{% endhint %}
+
+---
+
+## Notes
+
+Manage your personal notes.
+
+| Command | Description | Syntax | Permission |
+|---------|-------------|--------|------------|
+| `note` | View your notes | `note` | None |
+| `note add` | Add a personal note | `note add (text)` | None |
+| `note remove` | Remove a note by ID | `note remove (id)` | None |
+| `note list` | List all your notes | `note list` | None |
+| `note reset` | Delete all your notes | `note reset` | None |
+
+**Examples:**
+```
+,note add remember to buy milk
+,note remove 1
+,note list
+,note reset
+```
+
+{% hint style="info" %}
+- Maximum **50 notes** per user
+- Maximum **500 characters** per note
+{% endhint %}
