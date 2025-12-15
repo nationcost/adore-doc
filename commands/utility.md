@@ -290,12 +290,16 @@ Set your AFK status across all servers.
 | Command | Description | Syntax | Permission |
 |---------|-------------|--------|------------|
 | `afk` | Set your AFK status | `afk [reason]` | None |
+| `afk mentions` | View who mentioned you while AFK | `afk mentions` | None |
+| `afk clear` | Clear your AFK mentions | `afk clear` | None |
 
 **Examples:**
 ```
 ,afk
 ,afk sleeping
 ,afk be back in 30 mins
+,afk mentions
+,afk clear
 ```
 
 {% hint style="info" %}
@@ -303,4 +307,5 @@ Set your AFK status across all servers.
 - Your AFK status is automatically removed when you send a message
 - AFK status is **global** (works across all servers)
 - Maximum reason length: **200 characters**
+- Up to **50 mentions** are tracked
 {% endhint %}
