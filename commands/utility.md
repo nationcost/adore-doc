@@ -283,6 +283,48 @@ Download videos from social media platforms.
 
 ---
 
+## Music
+
+Play music in voice channels with autoplay and 24/7 support.
+
+| Command | Description | Aliases | Syntax | Permission |
+|---------|-------------|---------|--------|------------|
+| `play` | Play a song from SoundCloud or URL | `p` | `play (query or url)` | None |
+| `pause` | Pause the current track | - | `pause` | None |
+| `resume` | Resume the paused track | `unpause` | `resume` | None |
+| `skip` | Skip to the next track | `s`, `next` | `skip` | None |
+| `stop` | Stop playback and disconnect | `dc`, `disconnect`, `leave` | `stop` | None |
+| `nowplaying` | Show the currently playing track | `np`, `current` | `nowplaying` | None |
+| `queue` | Show the current queue | `q` | `queue` | None |
+| `volume` | Set the player volume | `vol`, `v` | `volume [0-100]` | None |
+| `autoplay` | Toggle autoplay similar tracks | `ap` | `autoplay` | None |
+| `stay` | Toggle 24/7 mode | `247`, `24/7` | `stay` | None |
+
+**Examples:**
+```
+,play never gonna give you up
+,play https://soundcloud.com/artist/track
+,np
+,skip
+,volume 50
+,autoplay
+,stay
+```
+
+**Features:**
+- Interactive buttons on play/nowplaying messages (pause, play, stop)
+- Autoplay mode plays similar tracks when queue ends
+- 24/7 mode keeps the bot in voice channel even when users leave
+- Progress bar display in nowplaying command
+
+{% hint style="info" %}
+- Autoplay searches for similar tracks based on the current track's artist and title
+- 24/7 mode persists until disabled or bot is stopped
+- Volume range: **0-100%**
+{% endhint %}
+
+---
+
 ## AFK
 
 Set your AFK status across all servers.

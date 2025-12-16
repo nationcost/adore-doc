@@ -90,6 +90,7 @@ You can have up to **10 autoroles**.
 
 | Command | Description | Syntax | Permission |
 |---------|-------------|--------|------------|
+| `roles` | View all roles in the server | `roles` | None |
 | `role` | Toggle a role on a member | `role (user) (role)` | `manage_roles` |
 | `role add` | Add a role to a member | `role add (user) (role)` | `manage_roles` |
 | `role has` | View members with a specific role | `role has (role)` | `manage_roles` |
@@ -111,7 +112,7 @@ You can have up to **10 autoroles**.
 | `role create` | Create a new role | `role create (name)` | `manage_roles` |
 | `role delete` | Delete a role | `role delete (role)` | `manage_roles` |
 | `role color` | Change a role's color | `role color (role) (hex)` | `manage_roles` |
-| `role icon` | Change a role's icon | `role icon (role) (emoji/url)` | `manage_roles` |
+| `role icon` | Change a role's icon (supports custom emojis) | `role icon (role) (emoji/url)` | `manage_roles` |
 | `role rename` | Rename a role | `role rename (role) (new name)` | `manage_roles` |
 | `role restore` | Restore roles for a rejoined member | `role restore (member)` | `manage_roles` |
 
@@ -456,7 +457,7 @@ Booster roles will be created directly below the baserole. If no baserole is set
 |---------|-------------|--------|------------|
 | `boosterrole create` | Create your custom booster role | `boosterrole create [name]` | Booster |
 | `boosterrole color` | Change your booster role color | `boosterrole color (color)` | Booster |
-| `boosterrole icon` | Change your booster role icon | `boosterrole icon (emoji)` | Booster |
+| `boosterrole icon` | Change your booster role icon (supports custom emojis) | `boosterrole icon (emoji)` | Booster |
 | `boosterrole share` | Share your role with another user | `boosterrole share (user)` | Booster |
 | `boosterrole unshare` | Remove a user from your shared role | `boosterrole unshare (user)` | Booster |
 | `boosterrole name` | Rename your booster role | `boosterrole name (new name)` | Booster |
@@ -471,6 +472,7 @@ Booster roles will be created directly below the baserole. If no baserole is set
 ,br color #ff5733
 ,br color pink
 ,br icon 🔥
+,br icon :customemoji:
 ,br share @friend
 ,br unshare @friend
 ,br name Cool Name

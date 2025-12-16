@@ -9,6 +9,21 @@ Create rich embeds with titles, descriptions, images, fields, buttons, and more.
 
 ---
 
+## Supported Commands
+
+The following commands support custom embeds:
+
+| Command | Description |
+|---------|-------------|
+| `welcome` | Welcome message when members join |
+| `leave` | Leave message when members leave |
+| `boost` | Boost message when members boost |
+| `autoresponder` | Custom trigger responses |
+| `stickymessage` | Persistent channel messages |
+| `embeds` | Test/preview embed code |
+
+---
+
 ## Basic Structure
 
 Embeds use the `{embed}` tag followed by properties separated by `$v`:
